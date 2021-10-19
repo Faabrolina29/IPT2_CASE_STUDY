@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculatorstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="headlines">
+    <h1>Weclome to my Calculator</h1>
+    <h4>Lets solve your problem</h4>
+  </div>
+  <div class="calc-container">
+    <form class="MyCalculator" name="calcu">
+      <input class="value" type="text" name="txt" readonly="">
+      <span class="num clear" onclick="document.calcu.txt.value =''">clear</span>
+      <span class="num" onclick="document.calcu.txt.value +='/'">/</span>
+      <span class="num" onclick="document.calcu.txt.value +='*'">*</span>
+      <span class="num" onclick="document.calcu.txt.value +='7'">7</span>
+      <span class="num" onclick="document.calcu.txt.value +='8'">8</span>
+      <span class="num" onclick="document.calcu.txt.value +='9'">9</span>
+      <span class="num" onclick="document.calcu.txt.value +='-'">-</span>
+      <span class="num" onclick="document.calcu.txt.value +='4'">4</span>
+      <span class="num" onclick="document.calcu.txt.value +='5'">5</span>
+      <span class="num" onclick="document.calcu.txt.value +='6'">6</span>
+      <span class="num plus" onclick="document.calcu.txt.value +='+'">+</span>
+      <span class="num" onclick="document.calcu.txt.value +='3'">3</span>
+      <span class="num" onclick="document.calcu.txt.value +='2'">2</span>
+      <span class="num" onclick="document.calcu.txt.value +='1'">1</span>
+      <span class="num" onclick="document.calcu.txt.value +='0'">0</span>
+      <span class="num" onclick="document.calcu.txt.value +='00'">00</span>
+      <span class="num" onclick="document.calcu.txt.value +='.'">.</span>
+      <span class="num equal" onclick="document.calcu.txt.value = eval(calcu.txt.value)">=</span>
+    </form>
+  </div>
+  
+
+</body>
+</html>
